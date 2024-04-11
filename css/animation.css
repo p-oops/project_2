@@ -1,0 +1,37 @@
+.first-container .main-slider, .selling-container {
+    animation-name: changePositionAndVisible;
+    animation-duration: 1s;
+}
+
+@keyframes changePositionAndVisible {
+    from {
+        opacity: 0.2;
+        transform: translateX(5%);
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.first-container header .nav-content .logo {
+    animation-name: logoAnimation;
+    animation-duration: 1s;  
+}       
+  
+
+@keyframes logoAnimation{
+    0%{
+        transform: rotate(0deg);
+        color: #828282;
+    }
+
+    50% {
+        color: #e3e3e3;   
+    }
+
+    100%{
+        transform: rotate(360deg)
+    }
+  }
